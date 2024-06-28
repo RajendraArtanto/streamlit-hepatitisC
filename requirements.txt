@@ -1,9 +1,7 @@
-pip install numpy==1.26.4
-pandas
+numpy==1.26.4
+pandas==2.2.2
 streamlit
-pip
+pickle
+pip==24.1.1
 scikit-learn
-sklearn
 catboost
-matplotlib
-seaborn
