@@ -19,6 +19,9 @@ model_names = {
 # Judul web
 st.title('Prediksi Penyakit Hepatitis C')
 
+# Nama
+st.write("Oleh : Rajendra Artanto - 21.11.4236")
+
 # Memilih model
 selected_model = st.selectbox('Pilih Model Prediksi', list(model_names.keys()))
 model_path = model_names[selected_model]
