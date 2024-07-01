@@ -236,6 +236,10 @@ elif menu == "Prediksi":
 elif menu == "Visualisasi":
     st.subheader('Visualisasi Dataset Hepatitis C')
 
+    st.write("Dataset yang digunakan yaitu dataset pasien Hepatitis C yang diambil dari situs Kaggle.com dan telah dilakukan proses EDA. EDA, atau Exploratory Data Analysis, adalah proses analisis awal data yang bertujuan untuk memahami karakteristik, struktur, dan komponen penting dari dataset sebelum melakukan analisis statistik atau pemodelan prediktif lebih lanjut.")
+    st.write("Klik link dibawah ini untuk mengakses dataset")
+    st.write("[Dataset asli](https://www.kaggle.com/datasets/fedesoriano/hepatitis-c-dataset) | [Dataset + EDA](https://drive.google.com/file/d/1dErBu_QUdeIBK9bQNUYa6zZvGZ2-_Yat/view?usp=drive_link)")
+    
     # Baca dataset dari file CSV
     df_visual = pd.read_csv('HepatitisCdata_modified.csv')
 
