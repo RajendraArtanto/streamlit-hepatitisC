@@ -171,34 +171,34 @@ elif menu == "Prediksi":
         Sex = st.number_input('Jenis Kelamin (1 = Pria, 2 = Wanita)', min_value=1, max_value=2, value=1)
 
     with col3:
-        ALB = st.number_input('Jumlah Kadar Albumin (ALB)', min_value=0.0, step=0.1, value=0.0)
+        ALB = st.number_input('Jumlah Kadar ALB (14,9 - 82,2)', min_value=0.0, step=0.1, value=0.0)
 
     with col1:
-        ALP = st.number_input('Jumlah Kadar Alkaline Phosphatase (ALP)', min_value=0.0, step=0.1, value=0.0)
+        ALP = st.number_input('Jumlah Kadar ALP (11,3 - 416,6)', min_value=0.0, step=0.1, value=0.0)
 
     with col2:
-        ALT = st.number_input('Jumlah Kadar Alanin Transaminase (ALT)', min_value=0.0, step=0.1, value=0.0)
+        ALT = st.number_input('Jumlah Kadar ALT (0,9 - 325,3)', min_value=0.0, step=0.1, value=0.0)
 
     with col3:
-        AST = st.number_input('Jumlah Kadar Aspartat (AST)', min_value=0.0, step=0.1, value=0.0)
+        AST = st.number_input('Jumlah Kadar AST (10,6 - 324)', min_value=0.0, step=0.1, value=0.0)
 
     with col1:
-        BIL = st.number_input('Jumlah Kadar Bilirubin (BIL)', min_value=0.0, step=0.1, value=0.0)
+        BIL = st.number_input('Jumlah Kadar BIL (0,8 - 209)', min_value=0.0, step=0.1, value=0.0)
 
     with col2:
-        CHE = st.number_input('Jumlah Kadar Kolinesterase (CHE)', min_value=0.0, step=0.1, value=0.0)
+        CHE = st.number_input('Jumlah Kadar CHE (1,42 - 16,41)', min_value=0.0, step=0.1, value=0.0)
 
     with col3:
-        CHOL = st.number_input('Jumlah Kadar Kolesterol (CHOL)', min_value=0.0, step=0.1, value=0.0)
+        CHOL = st.number_input('Jumlah Kadar CHOL (1,43 - 9,67)', min_value=0.0, step=0.1, value=0.0)
 
     with col1:
-        CREA = st.number_input('Jumlah Kadar Kreatin (CREA)', min_value=0.0, step=0.1, value=0.0)
+        CREA = st.number_input('Jumlah Kadar CREA (8 - 1079,1)', min_value=0.0, step=0.1, value=0.0)
 
     with col2:
-        GGT = st.number_input('Jumlah Kadar Gamma-Glutamil-Transferase (GGT)', min_value=0.0, step=0.1, value=0.0)
+        GGT = st.number_input('Jumlah Kadar GGT (4,5 - 650,9)', min_value=0.0, step=0.1, value=0.0)
 
     with col3:
-        PROT = st.number_input('Jumlah Kadar Protein (PROT)', min_value=0.0, step=0.1, value=0.0)
+        PROT = st.number_input('Jumlah Kadar PROT (44,8 - 86,5)', min_value=0.0, step=0.1, value=0.0)
 
     selected_model = st.selectbox('Pilih Model Prediksi', list(model_names.keys()))
     model_path = model_names[selected_model]
