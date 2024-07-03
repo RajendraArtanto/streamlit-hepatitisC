@@ -59,7 +59,7 @@ menu = st.sidebar.radio("Pilih halaman:", ["Home", "Prediksi", "Visualisasi"])
 if menu == "Home":
     # Judul web
     st.subheader('Aplikasi Prediksi Penyakit Hepatitis C')
-    st.write("Oleh: Rajendra Artanto - 21.11.4236")
+    st.write("Oleh : Rajendra Artanto - 21.11.4236")
 
     # Menambahkan gambar di bawah judul
     st.image('asset/heading.jpg', use_column_width=True)
