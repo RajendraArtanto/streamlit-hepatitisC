@@ -158,9 +158,6 @@ if menu == "Home":
 
 elif menu == "Prediksi":
     st.subheader('Input Data')
-    selected_model = st.selectbox('Pilih Model Prediksi', list(model_names.keys()))
-    model_path = model_names[selected_model]
-    model = load_model(model_path)
 
     st.info("Pengisian atribut dapat menggunakan contoh rentang yang terdapat pada tabel petunjuk pengisian")
 
@@ -202,6 +199,10 @@ elif menu == "Prediksi":
 
     with col3:
         PROT = st.number_input('Jumlah Kadar Protein (PROT)', min_value=0.0, step=0.1, value=0.0)
+
+    selected_model = st.selectbox('Pilih Model Prediksi', list(model_names.keys()))
+    model_path = model_names[selected_model]
+    model = load_model(model_path)
 
     # Kode prediksi
     hepatitis_c_diagnosis = ''
